@@ -1,0 +1,38 @@
+body {
+    background-image: url("forever young bg.jpeg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: cursive;
+   }
+h1{
+    text-align: center;
+    color: rgb(39, 2, 71);
+    font-family: fantasy;
+}
+img{
+    display: block;
+    margin: auto;
+
+}
+p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 16, 129);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+iframe{
+    color: rgb(252, 252, 252);
+    background-color: rgb(233, 109, 129);
+    margin-left: auto;
+    margin-right: auto;
+    font-family:sans-serif;
+}
+#center{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(6, 38, 143);
+}
