@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+
+        }
+        ul{
+            text-align: left;
+           
+        }
+        .internal{
+            color: rosybrown;
+        }
+        .type{
+            margin: 15px;
+        }
+        .fonts{
+            font-family:'Times New Roman', Times, serif;
+            text-align: right;
+        }
+        .fstyle{
+            font-style: italic;
+            text-align: right;
+        }
+        .fweight{
+            font-weight: bold;
+            text-align: right;
+        }
+        .funderline{
+            text-decoration: underline;
+            text-decoration-color: purple;
+            text-decoration-style: dashed;
+            text-align: right;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>CSS<h1>
+    <h2 class="type">Ways to add css</h2>
+    <ul>
+        <li>
+            Inline CSS
+            <p style="color: blueviolet;"> Using style attribute</p>
+        </li>
+        <li>
+            Internal css
+            <p class="internal">Uses Style tag in head tag</p>
+        </li>
+        <li>
+            External css
+            <p class="external"> Using Style.css file</p>
+        </li>
+        <li>
+            Above change in colour that can be viewed
+            <br>example is using the same type of CSS as mentioned
+        </li>
+    </ul>
+    <h2 class="fonts">Fonts</h2>
+    <p class="fstyle">Here font style is chnaged</p>
+    <p class="fweight"> Here Weight is added on text</p>
+    <p class="funderline"> Here Text decoration is added</p>
+    Colours can be changed using "color: colourname" or "color: #hexcode" or "color: rgb(0,0,0)"
+    <br>for example
+    <p style="color: blue;">Colour is changed using colour name</p>
+    <p style="color: #0c73d3;">Colour is changed using hex code</p>
+    <p style="color: rgb(46, 32, 5);">Colour is changed using rgb code</p>
+    <p style="color: rgba(151, 7, 7, 0.5);">Colour is changed using rgba code</p>
+    <p style="color: hsl(298, 76%, 8%);">Colour is changed using hsl code</p>
+</body>
+
+</html>
