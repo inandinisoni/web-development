@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS specificity and cascade
+    </title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .precedence {
+            color: red;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1 >ABOUT CSS CASCADE AND SPECIFICITY</h1>
+    <p>CSS stands for Cascade style sheet . Cascade is an algorithm for solving conflicts where multiple CSS rules are
+        applied to an HTML element</p>
+    <p>Specificity is the means by which browsers decide which CSS property values are the most relevant to an element
+        and therefore will be applied.</p>
+    <p>Specificity is a weight that is applied to a given CSS declaration, determined by the number of each selector
+        type in the matching selector. When multiple declarations have equal specificity, the last declaration found in
+        the CSS is applied to the element.</p>
+
+    <h2>Specificity Hierarchy</h2>
+    <div>
+        <p>Inline styles - 1000</p>
+        <p>ID - 100</p>
+        <p>Class, pseudo-class, attribute - 10</p>
+        <p>Element, pseudo-element - 1</p>
+        <p>Universal selector - 0</p>
+        <b class="precedence">Inline CSS > ID selector > Class or attribute selector > Element selector > Universal
+            Selector </b>
+    </div>
+    <div>
+        <p>
+        <h2>!important </h2>
+        It is important to note that the <b> !important </b>declaration will override the normal specificity hierarchy.
+        </p>
+        <p>For example, if you have a style defined for a paragraph element with an ID of #special, and you add the
+            !important declaration to the style that is defined for the .special class, the style that is defined for
+            the
+            .special class will take precedence over the style that is defined for the ID.</p>
+        <p>It is generally best to avoid using the !important declaration, as it can make it difficult to override
+            styles later on in your CSS.</p>
+    </div>
+    <h2>Position and order of apppearance</h2>
+    <p>When two selectors have the same specificity, the last one defined will take precedence.</p>
+    <h2>Origin</h2>
+    <p>If you havent applied any style in your css the browser will have its own <i>User Agent Stylesheet</i> which will be
+        applied if no css is present and we write out own css it will overwrite browsers.</p>
+</body>
+
+</html>
